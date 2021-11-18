@@ -1,0 +1,33 @@
+/*
+   Protocol description
+*/
+
+// Domain declaration
+domain com.chronoxor
+
+// Package declaration
+package MarketDataFast
+
+// Protocol version
+version 1.0
+
+// market declaration
+
+
+struct L1Data{
+    [key] string symbol;
+    double ask;
+    uint64 ask_size;
+    uint64 ask_time;
+    double bid;
+    uint64 bid_size;
+    uint64 bid_time;
+    double trade;
+    uint64 trade_size;
+    uint64 trade_time;
+    string trading_status;
+    string trading_status_reason;
+    uint64 GatewayTimeStampns;
+    uint64 GatewayTimeStamp;
+    uint64 MachineTimeStamp;
+}
